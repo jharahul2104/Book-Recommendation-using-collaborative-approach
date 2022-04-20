@@ -14,10 +14,10 @@ st.set_page_config(page_title='Book Recommender', page_icon='📚',
 #----------------- Recommenation book ------------------
 def main():
   #---------Loading model -------------------------------------
-  pivot_table=pickle.load(open('/content/book_tag.pkl','rb'))
-  model=pickle.load(open('/content/model.pkl','rb'))
-  image=pickle.load(open('/content/image (1).pkl','rb'))
-  book_info=pickle.load(open('/content/info_book.pkl','rb'))
+  pivot_table=pickle.load(open('book_tag.pkl','rb'))
+  model=pickle.load(open('model.pkl','rb'))
+  image=pickle.load(open('image (1).pkl','rb'))
+  book_info=pickle.load(open('info_book.pkl','rb'))
 
   st.title('Book Recommendation Engine 📖')
   book=st.selectbox('Enter name of the book',pivot_table.index)
